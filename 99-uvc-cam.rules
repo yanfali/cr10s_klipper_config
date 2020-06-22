@@ -1,0 +1,1 @@
+SUBSYSTEM=="video4linux", KERNEL=="video[0-9]*", ATTRS{product}=="Full HD webcam", ATTRS{serial}=="20200306001", RUN="/usr/bin/v4l2-ctl -d $devnode --set-ctrl=exposure_auto=1,exposure_absolute=99,gamma=280,brightness=150,contrast=37,power_line_frequency=2"
